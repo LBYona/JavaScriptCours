@@ -1,0 +1,169 @@
+
+
+:root{
+    --theme: #000;
+    --theme_background_button: rgba(0, 15, 101, 0.74);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#toggleButton {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--theme);/*variations des couleurs*/
+    width: 10%;
+}
+.Logo{
+    width: 15vw;
+}
+.TopLineWeb{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+        
+}
+header{
+    display: flex;
+    height: 827px;
+    flex-direction: column;
+    flex: 0%;
+    background-color: rgba(0, 0, 0, 0.274);
+    height: 200px;
+        
+}
+.Titre{
+    color: goldenrod;
+    width: 100%;
+    text-align: center;
+    
+    font-weight: 300;
+    font-style: normal;
+    
+    transition: .4s ease;
+    font-size: 25px;
+    padding-right: 12vw;
+    
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.Line1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.classbutton{
+    font-size: 22px;
+    color: rgb(255, 162, 0);
+    background-color:var(--theme_background_button);/*variations des couleurs*/
+    
+    font-weight: 300;
+    font-style: normal;
+    transition: .4s ease;
+    border-radius: 15px; 
+    width: 10vw;
+        
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+a:link{
+    color: goldenrod;
+}
+a:visited{
+    color: goldenrod;
+}
+    
+.intro {
+    color: wheat;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding: 150px 0px;
+    text-align: center;
+}
+body{
+    background: url("images/Back.jpg") center fixed;
+    background-size: cover;
+}
+
+.Remerciements{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.LinkedIn{
+    text-align: center;
+    font-size: 25px;
+}
+body{
+    background: url("images/Back.jpg") center fixed;
+    background-size: cover;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.274);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containercards{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 100px 10px;
+    margin-inline: 10%;
+}
+.yeti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #927f04;
+}
+@media screen and (max-width: 800px){
+    .Remerciements{
+        font-size: 15px;
+    }
+    .LinkedIn{
+        font-size: 15px
+    }
+    .classbutton{
+        font-size: 20px;
+        width: 150px;
+    }
+    .Logo{
+        width: 35%;
+    }
+    #imageLogo{
+        width: 100%;
+    }
+    .yeti{
+        padding: 0px 450px;
+    }
+    footer{
+        width: 900px;
+    }
+    header{
+        width: 900px;
+    }
+}
